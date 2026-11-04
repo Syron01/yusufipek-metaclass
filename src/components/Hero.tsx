@@ -12,11 +12,6 @@ export default function Hero() {
   return (
     <section className="hero" id="top">
       <div className="container hero-inner">
-        <div className="hero-badge-pill">
-          <span className="hero-badge-dot" aria-hidden="true" />
-          <span className="hero-badge-label">{hero.badge}</span>
-        </div>
-
         <div className="hero-portrait-spotlight" aria-hidden="true">
           <div className="spotlight-soft-aura" />
           <div className="spotlight-rings">
@@ -33,14 +28,6 @@ export default function Hero() {
               loading="eager"
             />
             <div className="spotlight-fade-bottom" />
-          </div>
-          <div className="spotlight-tag spotlight-tag--left">
-            <span className="tag-number">6+ Yıl</span>
-            <span className="tag-desc">Aktif Üretici</span>
-          </div>
-          <div className="spotlight-tag spotlight-tag--right">
-            <span className="tag-number">40+</span>
-            <span className="tag-desc">Sözleşme Deneyimi</span>
           </div>
         </div>
 
