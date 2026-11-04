@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { snap } from '../content'
-import { prefersReducedMotion } from '../lib/smooth'
+import { prefersReducedMotion, getLenis } from '../lib/smooth'
 
 const pad = (value: number) => String(value).padStart(2, '0')
 
@@ -78,11 +78,22 @@ export default function Snap() {
     }
 
     update()
-    window.addEventListener('scroll', onScroll, { passive: true })
+
+    // Lenis smooth scroll kullanıldığında Lenis'ten de dinle
+    const lenis = getLenis()
+    if (lenis) {
+      lenis.on('scroll', onScroll)
+    } else {
+      window.addEventListener('scroll', onScroll, { passive: true })
+    }
     window.addEventListener('resize', onScroll)
     return () => {
       cancelled = true
-      window.removeEventListener('scroll', onScroll)
+      if (lenis) {
+        lenis.off('scroll', onScroll)
+      } else {
+        window.removeEventListener('scroll', onScroll)
+      }
       window.removeEventListener('resize', onScroll)
       if (frame) window.cancelAnimationFrame(frame)
     }

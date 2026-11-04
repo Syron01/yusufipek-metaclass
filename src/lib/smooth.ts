@@ -41,6 +41,10 @@ export function destroySmoothScroll() {
   lenis = null
 }
 
+export function getLenis() {
+  return lenis
+}
+
 export function scrollToId(id: string) {
   const target = document.querySelector(id)
   if (!target) return

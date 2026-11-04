@@ -1,4 +1,4 @@
-/**
+﻿/**
  * All copy, links and course data for the page.
  * Checkout, login and legal routes point at the live store so the redesign can
  * be dropped onto kurs.yusufipek.me without rewiring the purchase flow.
@@ -20,66 +20,66 @@ export const links = {
 
 export const price = {
   amount: '4.999',
-  currency: '₺',
+  currency: 'â‚º',
   installment: '577',
 }
 
 export const nav = [
   { label: 'Kurs', href: '#kurs' },
-  { label: 'İçerik', href: '#icerik' },
+  { label: 'Ä°Ã§erik', href: '#icerik' },
   { label: 'Yorumlar', href: '#yorumlar' },
   { label: 'SSS', href: '#sss' },
 ]
 
 export const hero = {
-  badge: 'Yusuf İpek · Resmî Eğitim Portalı & Kişisel Bio',
-  eyebrow: 'YouTube Meta Class · 2026 Resmî Müfredat',
-  kicker: 'Sponsorluk & Büyüme Stratejisi',
-  lines: ['Masada para', 'bırakmayın.'],
+  badge: 'Yusuf Ä°pek Â· ResmÃ® EÄŸitim PortalÄ± & KiÅŸisel Bio',
+  eyebrow: 'YouTube Meta Class Â· 2026 ResmÃ® MÃ¼fredat',
+  kicker: 'Sponsorluk & BÃ¼yÃ¼me Stratejisi',
+  lines: ['Masada para', 'bÄ±rakmayÄ±n.'],
   lead:
-    "Sponsor size fiyat sorduğunda ne diyeceğinizi bilin. Kanalınız için doğru fiyat belirlemeyi, profesyonel sponsorluk paketi hazırlamayı ve masaya güvenle oturmayı öğrenin. 6 yıllık YouTube üreticiliği ve 23 markayla yapılan 40'tan fazla sözleşmenin doğrudan tecrübesi.",
-  micro: 'Tek seferlik ödeme · Ömür boyu sınırsız erişim · İlk ders tamamen ücretsiz',
+    "Sponsor size fiyat sorduÄŸunda ne diyeceÄŸinizi bilin. KanalÄ±nÄ±z iÃ§in doÄŸru fiyat belirlemeyi, profesyonel sponsorluk paketi hazÄ±rlamayÄ± ve masaya gÃ¼venle oturmayÄ± Ã¶ÄŸrenin. 6 yÄ±llÄ±k YouTube Ã¼reticiliÄŸi ve 23 markayla yapÄ±lan 40'tan fazla sÃ¶zleÅŸmenin doÄŸrudan tecrÃ¼besi.",
+  micro: 'Tek seferlik Ã¶deme Â· Ã–mÃ¼r boyu sÄ±nÄ±rsÄ±z eriÅŸim Â· Ä°lk ders tamamen Ã¼cretsiz',
   stats: [
-    { label: 'Meslek Olarak', value: '6 Yıl', count: 6, suffix: ' Yıl' },
+    { label: 'Meslek Olarak', value: '6 YÄ±l', count: 6, suffix: ' YÄ±l' },
     { label: 'YouTube Abonesi', value: '230.000+', count: 230000, suffix: '+' },
-    { label: 'Toplam İzlenme', value: '72 Milyon+', count: 72, suffix: ' Milyon+' },
+    { label: 'Toplam Ä°zlenme', value: '72 Milyon+', count: 72, suffix: ' Milyon+' },
   ],
 }
 
 export const snap = {
   frames: 48,
   phases: [
-    { word: 'Belirsizlik.', line: 'Kanalınız büyürken emeğinizin gerçek karşılığını bilememek.' },
-    { word: 'Strateji.', line: 'Net fiyat formülü, kurumsal paketler ve sağlam sözleşme.' },
-    { word: 'Sürdürülebilirlik.', line: 'Geride sadece büyüyen ve değer yaratan kanalınız kalır.' },
+    { word: 'Belirsizlik.', line: 'KanalÄ±nÄ±z bÃ¼yÃ¼rken emeÄŸinizin gerÃ§ek karÅŸÄ±lÄ±ÄŸÄ±nÄ± bilememek.' },
+    { word: 'Strateji.', line: 'Net fiyat formÃ¼lÃ¼, kurumsal paketler ve saÄŸlam sÃ¶zleÅŸme.' },
+    { word: 'SÃ¼rdÃ¼rÃ¼lebilirlik.', line: 'Geride sadece bÃ¼yÃ¼yen ve deÄŸer yaratan kanalÄ±nÄ±z kalÄ±r.' },
   ],
 }
 
 export const story = {
-  eyebrow: '01 — Neden bu kurs',
+  eyebrow: '01 â€” Neden bu kurs',
   quote:
-    'İlk videomda kamera açım yanlıştı ve ışığı hiç düşünmemiştim. O zaman fark etmedim, iyi bir video çektiğimi sanıyordum.',
+    'Ä°lk videomda kamera aÃ§Ä±m yanlÄ±ÅŸtÄ± ve Ä±ÅŸÄ±ÄŸÄ± hiÃ§ dÃ¼ÅŸÃ¼nmemiÅŸtim. O zaman fark etmedim, iyi bir video Ã§ektiÄŸimi sanÄ±yordum.',
   notes: [
     {
-      title: 'Bedeli kendim ödedim.',
+      title: 'Bedeli kendim Ã¶dedim.',
       body:
-        "Dört sene kurgumu kendim yaptım. Bütçem yoktu, kurgucu tutamazdım. Şimdi dönüp bakınca iyi ki de öyle olmuş diyorum. Bir kurgucunun işini bilip bilmediğini artık bakar bakmaz anlıyorum. Bu kursta anlattığım şeylerin çoğu, o dönemde ödediğim bedelin karşılığı.",
+        "DÃ¶rt sene kurgumu kendim yaptÄ±m. BÃ¼tÃ§em yoktu, kurgucu tutamazdÄ±m. Åimdi dÃ¶nÃ¼p bakÄ±nca iyi ki de Ã¶yle olmuÅŸ diyorum. Bir kurgucunun iÅŸini bilip bilmediÄŸini artÄ±k bakar bakmaz anlÄ±yorum. Bu kursta anlattÄ±ÄŸÄ±m ÅŸeylerin Ã§oÄŸu, o dÃ¶nemde Ã¶dediÄŸim bedelin karÅŸÄ±lÄ±ÄŸÄ±.",
     },
     {
-      title: 'Kuralları bilmek yetmiyor.',
+      title: 'KurallarÄ± bilmek yetmiyor.',
       body:
-        "Peki bu kursu alınca izlenmeye başlar mısınız? Sadece izleyip kapatırsanız hayır. Benim anlattığım şey oyunun kuralları. Kuralları bilmek tek başına yetmiyor, video çekmeniz gerekiyor. Ben altı yılda 1.000'den fazla video çektim; kendi videolarınızda deneyip sonuçlarına bakmak size kalıyor.",
+        "Peki bu kursu alÄ±nca izlenmeye baÅŸlar mÄ±sÄ±nÄ±z? Sadece izleyip kapatÄ±rsanÄ±z hayÄ±r. Benim anlattÄ±ÄŸÄ±m ÅŸey oyunun kurallarÄ±. KurallarÄ± bilmek tek baÅŸÄ±na yetmiyor, video Ã§ekmeniz gerekiyor. Ben altÄ± yÄ±lda 1.000'den fazla video Ã§ektim; kendi videolarÄ±nÄ±zda deneyip sonuÃ§larÄ±na bakmak size kalÄ±yor.",
     },
   ],
-  signature: 'Yusuf İpek',
-  role: '6 Yıldır YouTube İçerik Üreticisi',
+  signature: 'Yusuf Ä°pek',
+  role: '6 YÄ±ldÄ±r YouTube Ä°Ã§erik Ãœreticisi',
 }
 
 export const proof = [
-  { count: 23, suffix: '', label: 'markayla ücretli iş birliği' },
-  { count: 40, suffix: '+', label: "imzalanmış sponsorluk sözleşmesi" },
-  { count: 48, suffix: '', label: 'ders, 8 modülde' },
-  { count: 1000, suffix: '+', label: 'yayınlanmış video' },
+  { count: 23, suffix: '', label: 'markayla Ã¼cretli iÅŸ birliÄŸi' },
+  { count: 40, suffix: '+', label: "imzalanmÄ±ÅŸ sponsorluk sÃ¶zleÅŸmesi" },
+  { count: 48, suffix: '', label: 'ders, 8 modÃ¼lde' },
+  { count: 1000, suffix: '+', label: 'yayÄ±nlanmÄ±ÅŸ video' },
 ]
 
 export type Lesson = string
@@ -93,217 +93,218 @@ export type Module = {
 export const modules: Module[] = [
   {
     no: '1',
-    title: 'Başlamadan Önce',
-    lessons: ['Bu Kursu Bitirmeyeceksiniz (İstatistik Böyle Diyor)'],
+    title: 'BaÅŸlamadan Ã–nce',
+    lessons: ['Bu Kursu Bitirmeyeceksiniz (Ä°statistik BÃ¶yle Diyor)'],
   },
   {
     no: '2',
-    title: 'Sıfırdan Kanal Kurulumu',
+    title: 'SÄ±fÄ±rdan Kanal Kurulumu',
     lessons: [
-      'Ne Hakkında Video Çekeceğim?',
-      'Hangi Ekipmanı Almanıza Gerek Yok?',
-      'Video Fikirleriniz Nasıl Tükenmez?',
+      'Ne HakkÄ±nda Video Ã‡ekeceÄŸim?',
+      'Hangi EkipmanÄ± AlmanÄ±za Gerek Yok?',
+      'Video Fikirleriniz NasÄ±l TÃ¼kenmez?',
       'Hangi Programlara Para Vermelisiniz?',
-      'Tek Oturuşta Birden Fazla Video Çekmek',
-      'Doğru Bilinen Yanlışlar',
+      'Tek OturuÅŸta Birden Fazla Video Ã‡ekmek',
+      'DoÄŸru Bilinen YanlÄ±ÅŸlar',
     ],
   },
   {
     no: '3',
-    title: "YouTube'da İzlenmeyi Belirleyen Şeyler",
+    title: "YouTube'da Ä°zlenmeyi Belirleyen Åeyler",
     lessons: [
-      'Videonuz İzlenmiyorsa Sebebi Büyük İhtimalle Fikir',
-      'İnsanlar Neden Tıklar?',
-      'İlk 30 Saniyede İzleyiciyi Nasıl Tutarsınız?',
-      'İzleyiciyi Videoda Tutan Scriptler Yazma',
-      'İzleyiciye Video İzlediğini Unutturan Kurgu',
-      'Öneri Sistemi Nasıl Çalışır?',
-      'Shorts Çekmeli miyim?',
-      'Çaylak Hataları',
+      'Videonuz Ä°zlenmiyorsa Sebebi BÃ¼yÃ¼k Ä°htimalle Fikir',
+      'Ä°nsanlar Neden TÄ±klar?',
+      'Ä°lk 30 Saniyede Ä°zleyiciyi NasÄ±l TutarsÄ±nÄ±z?',
+      'Ä°zleyiciyi Videoda Tutan Scriptler Yazma',
+      'Ä°zleyiciye Video Ä°zlediÄŸini Unutturan Kurgu',
+      'Ã–neri Sistemi NasÄ±l Ã‡alÄ±ÅŸÄ±r?',
+      'Shorts Ã‡ekmeli miyim?',
+      'Ã‡aylak HatalarÄ±',
     ],
   },
   {
     no: '4',
-    title: "YouTube'dan Para Kazanmanın Yolları",
+    title: "YouTube'dan Para KazanmanÄ±n YollarÄ±",
     lessons: [
-      'İzlenmeden Kazanılan Para (AdSense)',
-      'Asıl Para Sponsorlarda',
-      'Satış Ortaklığı Değer mi?',
-      'Katıl Üyeliği İşe Yarıyor mu?',
-      'Canlı Yayından Para Kazanmak',
-      'Bildiğiniz Şeyi Ürüne Çevirmek',
-      'Merch Gerçekten Para Kazandırıyor mu?',
+      'Ä°zlenmeden KazanÄ±lan Para (AdSense)',
+      'AsÄ±l Para Sponsorlarda',
+      'SatÄ±ÅŸ OrtaklÄ±ÄŸÄ± DeÄŸer mi?',
+      'KatÄ±l ÃœyeliÄŸi Ä°ÅŸe YarÄ±yor mu?',
+      'CanlÄ± YayÄ±ndan Para Kazanmak',
+      'BildiÄŸiniz Åeyi ÃœrÃ¼ne Ã‡evirmek',
+      'Merch GerÃ§ekten Para KazandÄ±rÄ±yor mu?',
     ],
   },
   {
     no: '5',
-    title: 'Sponsorluk Bulmak, Pazarlık Etmek, Sözleşme Yapmak',
+    title: 'Sponsorluk Bulmak, PazarlÄ±k Etmek, SÃ¶zleÅŸme Yapmak',
     featured: true,
     lessons: [
-      'Videonuza Kaç Para İsteyeceksiniz?',
-      'Markanın Bütçesini Nasıl Öğrenirsiniz?',
-      'Markaya Göndereceğiniz Sunumu Hazırlamak',
-      'Sponsorları Nasıl Takip Ediyorum?',
-      'Sizi Koruyacak Sözleşme Oluşturma',
+      'Videonuza KaÃ§ Para Ä°steyeceksiniz?',
+      'MarkanÄ±n BÃ¼tÃ§esini NasÄ±l Ã–ÄŸrenirsiniz?',
+      'Markaya GÃ¶ndereceÄŸiniz Sunumu HazÄ±rlamak',
+      'SponsorlarÄ± NasÄ±l Takip Ediyorum?',
+      'Sizi Koruyacak SÃ¶zleÅŸme OluÅŸturma',
       'Sponsor Kaybettiren Hatalar',
       'Sponsor Size Neden Tekrar Gelir?',
-      'Aracı Kurumlar Değer mi?',
-      'Sponsor Gerçek Mi?',
+      'AracÄ± Kurumlar DeÄŸer mi?',
+      'Sponsor GerÃ§ek Mi?',
     ],
   },
   {
     no: '6',
-    title: 'YouTube Verilerini Doğru Okumak',
-    lessons: ["Analytics'te Neye Bakacaksınız?"],
+    title: 'YouTube Verilerini DoÄŸru Okumak',
+    lessons: ["Analytics'te Neye BakacaksÄ±nÄ±z?"],
   },
   {
     no: '7',
-    title: 'Kullandığım Araçlar ve İş Akışım',
+    title: 'KullandÄ±ÄŸÄ±m AraÃ§lar ve Ä°ÅŸ AkÄ±ÅŸÄ±m',
     lessons: [
-      "Gemini'yi İşimde Nasıl Kullanıyorum?",
-      'Kapağı Yayınlamadan Önce Test Etmek',
-      'Video Açıklamalarını Tek Yerden Düzenlemek',
+      "Gemini'yi Ä°ÅŸimde NasÄ±l KullanÄ±yorum?",
+      'KapaÄŸÄ± YayÄ±nlamadan Ã–nce Test Etmek',
+      'Video AÃ§Ä±klamalarÄ±nÄ± Tek Yerden DÃ¼zenlemek',
       'Trendleri Algoritmaya Kalmadan Takip Etmek',
-      "Yayın Takvimimi Notion'da Nasıl Kuruyorum?",
+      "YayÄ±n Takvimimi Notion'da NasÄ±l Kuruyorum?",
       'Fikirlerimi Nerede Biriktiriyorum?',
       'Stok Video ve Grafikleri Nereden Buluyorum?',
-      'Müzik ve Ses Efektlerini Nereden Buluyorum?',
-      'Yapay Zekayla Kapak Fotoğrafı Üretmek',
-      'Kapak Fotoğraflarımı Nasıl Üretiyorum? (V2)',
+      'MÃ¼zik ve Ses Efektlerini Nereden Buluyorum?',
+      'Yapay Zekayla Kapak FotoÄŸrafÄ± Ãœretmek',
+      'Kapak FotoÄŸraflarÄ±mÄ± NasÄ±l Ãœretiyorum? (V2)',
     ],
   },
   {
     no: '8',
     title: "YouTube'da Uzun Vadeli Oyun",
     lessons: [
-      'Linç Yediğinizde Ne Yapacaksınız?',
-      'İşi Nasıl Devredersiniz?',
-      'Yarın Kanalınız Kapansa Ne Olur?',
-      'İzleyici Sizi Nasıl Buluyor?',
-      'Telif ve Strike Yediğinizde Ne Olur?',
-      'YouTuber Vergi Öder mi?',
+      'LinÃ§ YediÄŸinizde Ne YapacaksÄ±nÄ±z?',
+      'Ä°ÅŸi NasÄ±l Devredersiniz?',
+      'YarÄ±n KanalÄ±nÄ±z Kapansa Ne Olur?',
+      'Ä°zleyici Sizi NasÄ±l Buluyor?',
+      'Telif ve Strike YediÄŸinizde Ne Olur?',
+      'YouTuber Vergi Ã–der mi?',
     ],
   },
 ]
 
 export const sponsor = {
-  eyebrow: '03 — Kursun kalbi',
+  eyebrow: '03 â€” Kursun kalbi',
   count: '09',
-  title: 'Sponsorla sadece fiyatı değil, işin kapsamını da konuşun.',
+  title: 'Sponsorla sadece fiyatÄ± deÄŸil, iÅŸin kapsamÄ±nÄ± da konuÅŸun.',
   body:
-    "Bir marka sizinle çalışmak istediğinde hangi soruları sormalısınız? Bütçesini nasıl öğrenirsiniz? Teklifinize neleri dahil eder, bunları nasıl fiyatlandırırsınız? Sponsorluk bölümündeki 9 derste fiyat belirlemeyi, paket oluşturmayı ve pazarlığı öğrenin. Görüşmeye ne isteyeceğinizi ve karşılığında ne sunacağınızı bilerek girin.",
-  cta: 'Sponsorluk bölümünü aç',
+    "Bir marka sizinle Ã§alÄ±ÅŸmak istediÄŸinde hangi sorularÄ± sormalÄ±sÄ±nÄ±z? BÃ¼tÃ§esini nasÄ±l Ã¶ÄŸrenirsiniz? Teklifinize neleri dahil eder, bunlarÄ± nasÄ±l fiyatlandÄ±rÄ±rsÄ±nÄ±z? Sponsorluk bÃ¶lÃ¼mÃ¼ndeki 9 derste fiyat belirlemeyi, paket oluÅŸturmayÄ± ve pazarlÄ±ÄŸÄ± Ã¶ÄŸrenin. GÃ¶rÃ¼ÅŸmeye ne isteyeceÄŸinizi ve karÅŸÄ±lÄ±ÄŸÄ±nda ne sunacaÄŸÄ±nÄ±zÄ± bilerek girin.",
+  cta: 'Sponsorluk bÃ¶lÃ¼mÃ¼nÃ¼ aÃ§',
 }
 
 export const fit = {
-  eyebrow: '04 — Kime göre',
+  eyebrow: '04 â€” Kime gÃ¶re',
   yes: [
-    'Video yayınlıyor ama neden izlenmediğini anlamakta zorlanıyorsanız.',
-    'İzlenmelerinizi sponsorluk gelirine dönüştürmek istiyorsanız.',
-    'Kendi yüzünüzle, kendi sesinizle içerik üretmek istiyorsanız.',
-    'Düzenli üretmeye ve öğrendiklerinizi videolarınızda denemeye hazırsanız.',
-    'Sonuçlar yavaş geldiğinde de devam etmeyi göze alıyorsanız.',
+    'Video yayÄ±nlÄ±yor ama neden izlenmediÄŸini anlamakta zorlanÄ±yorsanÄ±z.',
+    'Ä°zlenmelerinizi sponsorluk gelirine dÃ¶nÃ¼ÅŸtÃ¼rmek istiyorsanÄ±z.',
+    'Kendi yÃ¼zÃ¼nÃ¼zle, kendi sesinizle iÃ§erik Ã¼retmek istiyorsanÄ±z.',
+    'DÃ¼zenli Ã¼retmeye ve Ã¶ÄŸrendiklerinizi videolarÄ±nÄ±zda denemeye hazÄ±rsanÄ±z.',
+    'SonuÃ§lar yavaÅŸ geldiÄŸinde de devam etmeyi gÃ¶ze alÄ±yorsanÄ±z.',
   ],
   no: [
-    'Dersleri izlemeye ve uygulamaya zaman ayırmayacaksanız.',
-    'Birkaç video yayınlayıp sonuç alamayınca bırakacaksanız.',
-    'Düzenli video üretmeye hazır değilseniz.',
-    "Kanalınızı emek vermeden, tamamen otomasyonla büyütmek istiyorsanız.",
-    'Kursu bitirince bir ay içinde para kazanmayı bekliyorsanız.',
+    'Dersleri izlemeye ve uygulamaya zaman ayÄ±rmayacaksanÄ±z.',
+    'BirkaÃ§ video yayÄ±nlayÄ±p sonuÃ§ alamayÄ±nca bÄ±rakacaksanÄ±z.',
+    'DÃ¼zenli video Ã¼retmeye hazÄ±r deÄŸilseniz.',
+    "KanalÄ±nÄ±zÄ± emek vermeden, tamamen otomasyonla bÃ¼yÃ¼tmek istiyorsanÄ±z.",
+    'Kursu bitirince bir ay iÃ§inde para kazanmayÄ± bekliyorsanÄ±z.',
   ],
 }
 
 export const testimonials = [
   {
     quote:
-      'Kurs gerçekten emek verilerek çekilmiş, detaylı araştırma yapılmış ve tecrübe aktarımı yapılıyor. Daha önceden izlediğim YouTube eğitimlerinden farklı olarak birçok örneği anlık olarak yapıp anlatıyor. Parasını hakediyor kesinlikle.',
+      'Kurs gerÃ§ekten emek verilerek Ã§ekilmiÅŸ, detaylÄ± araÅŸtÄ±rma yapÄ±lmÄ±ÅŸ ve tecrÃ¼be aktarÄ±mÄ± yapÄ±lÄ±yor. Daha Ã¶nceden izlediÄŸim YouTube eÄŸitimlerinden farklÄ± olarak birÃ§ok Ã¶rneÄŸi anlÄ±k olarak yapÄ±p anlatÄ±yor. ParasÄ±nÄ± hakediyor kesinlikle.',
     name: 'Muhammed Arslan',
   },
   {
     quote:
-      'Gerçekten çok güzel bir eğitim. Eğitimin yanı sıra mail ile sorduğum sorulara anında cevap vermen eğitimin değerini 10x arttırıyor. Eğitimi bir kere çekip koymak kolay, asıl zor olan bu şekilde sürekli destek de verebilmek.',
+      'GerÃ§ekten Ã§ok gÃ¼zel bir eÄŸitim. EÄŸitimin yanÄ± sÄ±ra mail ile sorduÄŸum sorulara anÄ±nda cevap vermen eÄŸitimin deÄŸerini 10x arttÄ±rÄ±yor. EÄŸitimi bir kere Ã§ekip koymak kolay, asÄ±l zor olan bu ÅŸekilde sÃ¼rekli destek de verebilmek.',
     name: 'Mustafa Dikmen',
   },
   {
     quote:
-      "Yavaş yavaş, sindire sindire izledim ve bitirdim. Pek çok konu sadelikle ve anlaşılır şekilde anlatılıyor. Kesinlikle sonuç odaklı. Uzun saatli bir kurs illüzyonundan çok, YouTube'a başlamayı düşünen veya yolun başında olan herkese neyin nasıl yapılması gerektiğini anlatan bilgi dolu bir içerik.",
-    name: 'Ömer Yörükoğlu',
+      "YavaÅŸ yavaÅŸ, sindire sindire izledim ve bitirdim. Pek Ã§ok konu sadelikle ve anlaÅŸÄ±lÄ±r ÅŸekilde anlatÄ±lÄ±yor. Kesinlikle sonuÃ§ odaklÄ±. Uzun saatli bir kurs illÃ¼zyonundan Ã§ok, YouTube'a baÅŸlamayÄ± dÃ¼ÅŸÃ¼nen veya yolun baÅŸÄ±nda olan herkese neyin nasÄ±l yapÄ±lmasÄ± gerektiÄŸini anlatan bilgi dolu bir iÃ§erik.",
+    name: 'Ã–mer YÃ¶rÃ¼koÄŸlu',
   },
   {
     quote:
-      'İlk dersi bitirdim. İlk dersten satın alanları düşünüp "lütfen kursu bitirin ve uygulayın" diye bu kadar ısrarla dile getirilen bir kursa denk gelmemiştim. Sunum ve ses kalitesi de çok iyi. Anlatılan bilgilerin kalitesine diyecek yok.',
+      'Ä°lk dersi bitirdim. Ä°lk dersten satÄ±n alanlarÄ± dÃ¼ÅŸÃ¼nÃ¼p "lÃ¼tfen kursu bitirin ve uygulayÄ±n" diye bu kadar Ä±srarla dile getirilen bir kursa denk gelmemiÅŸtim. Sunum ve ses kalitesi de Ã§ok iyi. AnlatÄ±lan bilgilerin kalitesine diyecek yok.',
     name: 'Oktay',
   },
 ]
 
 export const channel = {
-  eyebrow: '06 — Kanal',
+  eyebrow: '06 â€” Kanal',
   title: 'Kanaldan son videolar.',
   body:
-    "Altı yıldır video üretiyorum, kanalda 1.000'den fazla video var. Bu kurs, o videoların nasıl ortaya çıktığının cevabı: fikirden kapağa, kurgudan sponsor görüşmesine kadar.",
+    "AltÄ± yÄ±ldÄ±r video Ã¼retiyorum, kanalda 1.000'den fazla video var. Bu kurs, o videolarÄ±n nasÄ±l ortaya Ã§Ä±ktÄ±ÄŸÄ±nÄ±n cevabÄ±: fikirden kapaÄŸa, kurgudan sponsor gÃ¶rÃ¼ÅŸmesine kadar.",
   handle: '@yusufipk',
   stats: ['230.000+ abone', '72 milyon+ izlenme', "1.000'den fazla video"],
   videos: [
     {
       id: 'xYyuaYXUpdU',
-      title: 'Linux Adam ÖLDÜ(!) — İzleyicilerime Sesleniş',
-      date: '3 Kasım 2026',
-      thumb: '${import.meta.env.BASE_URL}assets/youtube/xYyuaYXUpdU.jpg',
+      title: 'Linux Adam Ã–LDÃœ(!) â€” Ä°zleyicilerime SesleniÅŸ',
+      date: '3 KasÄ±m 2026',
+      thumb: 'https://i.ytimg.com/vi/xYyuaYXUpdU/hqdefault.jpg',
     },
     {
       id: 'zyudLHxtAeg',
-      title: 'Sadece Reklam Görerek Hacklenebilir Misiniz?',
-      date: '2 Kasım 2026',
-      thumb: '${import.meta.env.BASE_URL}assets/youtube/zyudLHxtAeg.jpg',
+      title: 'Sadece Reklam GÃ¶rerek Hacklenebilir Misiniz?',
+      date: '2 KasÄ±m 2026',
+      thumb: 'https://i.ytimg.com/vi/zyudLHxtAeg/hqdefault.jpg',
     },
     {
       id: 'K5incXt-UuI',
-      title: 'Google Yapay Zeka Sıralamasında Birinci Oldu',
-      date: '1 Kasım 2026',
-      thumb: '${import.meta.env.BASE_URL}assets/youtube/K5incXt-UuI.jpg',
+      title: 'Google Yapay Zeka SÄ±ralamasÄ±nda Birinci Oldu',
+      date: '1 KasÄ±m 2026',
+      thumb: 'https://i.ytimg.com/vi/K5incXt-UuI/hqdefault.jpg',
     },
   ],
 }
 
 export const pricing = {
-  eyebrow: '07 — Katılım',
-  title: 'Kursun tamamı. Tek ödeme.',
+  eyebrow: '07 â€” KatÄ±lÄ±m',
+  title: 'Kursun tamamÄ±. Tek Ã¶deme.',
   intro:
-    'Tek bir sponsorluk görüşmesinde masada bıraktığınız fark, kursun bedelinden fazla olabilir.',
+    'Tek bir sponsorluk gÃ¶rÃ¼ÅŸmesinde masada bÄ±raktÄ±ÄŸÄ±nÄ±z fark, kursun bedelinden fazla olabilir.',
   features: [
-    '8 modül, 48 dersin tamamı',
-    'Sponsorluk üzerine 9 ders',
-    'Notion sponsor CRM şablonu',
-    'Hazır sponsorluk sözleşmesi',
-    'Markaları ikna eden sunum formülü',
-    'Gemini prompt kütüphanesi',
+    '8 modÃ¼l, 48 dersin tamamÄ±',
+    'Sponsorluk Ã¼zerine 9 ders',
+    'Notion sponsor CRM ÅŸablonu',
+    'HazÄ±r sponsorluk sÃ¶zleÅŸmesi',
+    'MarkalarÄ± ikna eden sunum formÃ¼lÃ¼',
+    'Gemini prompt kÃ¼tÃ¼phanesi',
     'F/P ekipman listesi',
-    'Ömür boyu erişim',
+    'Ã–mÃ¼r boyu eriÅŸim',
   ],
-  note: 'Erişim, ödeme sonrası hesabınıza anında tanımlanır.',
+  note: 'EriÅŸim, Ã¶deme sonrasÄ± hesabÄ±nÄ±za anÄ±nda tanÄ±mlanÄ±r.',
   legal:
-    "Satın alarak Hizmet Şartları, Mesafeli Satış Sözleşmesi, Gizlilik Politikası ve İade Politikası'nı kabul etmiş olursunuz.",
+    "SatÄ±n alarak Hizmet ÅartlarÄ±, Mesafeli SatÄ±ÅŸ SÃ¶zleÅŸmesi, Gizlilik PolitikasÄ± ve Ä°ade PolitikasÄ±'nÄ± kabul etmiÅŸ olursunuz.",
 }
 
 export const faq = {
-  eyebrow: '08 — Sorular',
+  eyebrow: '08 â€” Sorular',
   title: 'Sorular.',
   items: [
     {
-      q: 'Kaç abonem olursa sponsor bulabilirim?',
-      a: "Abone sayısı tek başına bir eşik değil. Markalar kime, ne kadar süre ve hangi kitleye ulaştığınıza bakıyor. Sponsorluk bölümünde markanın bütçesini nasıl öğreneceğinizi, teklifi nasıl kuracağınızı ve hangi durumda 'hayır' demeniz gerektiğini anlatıyorum.",
+      q: 'KaÃ§ abonem olursa sponsor bulabilirim?',
+      a: "Abone sayÄ±sÄ± tek baÅŸÄ±na bir eÅŸik deÄŸil. Markalar kime, ne kadar sÃ¼re ve hangi kitleye ulaÅŸtÄ±ÄŸÄ±nÄ±za bakÄ±yor. Sponsorluk bÃ¶lÃ¼mÃ¼nde markanÄ±n bÃ¼tÃ§esini nasÄ±l Ã¶ÄŸreneceÄŸinizi, teklifi nasÄ±l kuracaÄŸÄ±nÄ±zÄ± ve hangi durumda 'hayÄ±r' demeniz gerektiÄŸini anlatÄ±yorum.",
     },
     {
-      q: 'Ne kadar sürede sonuç alırım?',
-      a: 'Kurs kendi hızınızda ilerleyen 48 dersten oluşuyor. Sonuç, dersleri uygulayıp video yayınlamanıza bağlı. Kimse size bir tarih garantisi veremez; ilk ders ücretsiz, nasıl çalıştığını görüp kendiniz karar verin.',
+      q: 'Ne kadar sÃ¼rede sonuÃ§ alÄ±rÄ±m?',
+      a: 'Kurs kendi hÄ±zÄ±nÄ±zda ilerleyen 48 dersten oluÅŸuyor. SonuÃ§, dersleri uygulayÄ±p video yayÄ±nlamanÄ±za baÄŸlÄ±. Kimse size bir tarih garantisi veremez; ilk ders Ã¼cretsiz, nasÄ±l Ã§alÄ±ÅŸtÄ±ÄŸÄ±nÄ± gÃ¶rÃ¼p kendiniz karar verin.',
     },
     {
-      q: 'Kameram iyi değil, yine de işe yarar mı?',
-      a: "Kursun “Hangi Ekipmanı Almanıza Gerek Yok?” dersi tam olarak bunun için var. İyi video pahalı bir kameradan önce fikir, ışık ve kurgudan geliyor. Elinizdeki telefonla başlayabilirsiniz.",
+      q: 'Kameram iyi deÄŸil, yine de iÅŸe yarar mÄ±?',
+      a: "Kursun â€œHangi EkipmanÄ± AlmanÄ±za Gerek Yok?â€ dersi tam olarak bunun iÃ§in var. Ä°yi video pahalÄ± bir kameradan Ã¶nce fikir, Ä±ÅŸÄ±k ve kurgudan geliyor. Elinizdeki telefonla baÅŸlayabilirsiniz.",
     },
     {
-      q: 'Satın aldıktan sonra erişim nasıl oluyor?',
-      a: 'Ödeme sonrası erişim hesabınıza anında tanımlanır. Tüm modüller ve bonus şablonlar ömür boyu açık kalır; dilediğiniz zaman, kendi hızınızda ilerlersiniz.',
+      q: 'SatÄ±n aldÄ±ktan sonra eriÅŸim nasÄ±l oluyor?',
+      a: 'Ã–deme sonrasÄ± eriÅŸim hesabÄ±nÄ±za anÄ±nda tanÄ±mlanÄ±r. TÃ¼m modÃ¼ller ve bonus ÅŸablonlar Ã¶mÃ¼r boyu aÃ§Ä±k kalÄ±r; dilediÄŸiniz zaman, kendi hÄ±zÄ±nÄ±zda ilerlersiniz.',
     },
   ],
 }
+
