@@ -2181,6 +2181,89 @@ main[id] {
   }
 }
 
+/* ================================================================ scroll reveal */
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes revealFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes revealScale {
+  from {
+    opacity: 0;
+    transform: scale(0.94) translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Base: hidden until JS marks visible */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+}
+
+.reveal[data-visible='true'] {
+  animation: revealUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.reveal-fade {
+  opacity: 0;
+}
+
+.reveal-fade[data-visible='true'] {
+  animation: revealFade 0.6s ease forwards;
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.94) translateY(16px);
+}
+
+.reveal-scale[data-visible='true'] {
+  animation: revealScale 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Stagger delays for child elements */
+.stagger > *:nth-child(1) { animation-delay: 0ms; }
+.stagger > *:nth-child(2) { animation-delay: 80ms; }
+.stagger > *:nth-child(3) { animation-delay: 160ms; }
+.stagger > *:nth-child(4) { animation-delay: 240ms; }
+.stagger > *:nth-child(5) { animation-delay: 320ms; }
+.stagger > *:nth-child(6) { animation-delay: 400ms; }
+.stagger > *:nth-child(7) { animation-delay: 480ms; }
+.stagger > *:nth-child(8) { animation-delay: 560ms; }
+.stagger > *:nth-child(9) { animation-delay: 640ms; }
+
+/* Individual delay helpers */
+.delay-1 { animation-delay: 80ms !important; }
+.delay-2 { animation-delay: 160ms !important; }
+.delay-3 { animation-delay: 240ms !important; }
+.delay-4 { animation-delay: 320ms !important; }
+
+/* When a stagger parent becomes visible, reveal its children too */
+[data-visible='true'] > .reveal,
+[data-visible='true'] > * > .reveal {
+  animation: revealUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+[data-visible='true'] > .reveal-scale,
+[data-visible='true'] > * > .reveal-scale {
+  animation: revealScale 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
 /* ================================================================ responsive */
 @media (max-width: 980px) {
   .hero-stats {

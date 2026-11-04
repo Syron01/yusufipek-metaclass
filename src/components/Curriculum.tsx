@@ -1,12 +1,16 @@
 import { useEffect, useState } from 'react'
 import { links, modules, price } from '../content'
 import { scrollToId } from '../lib/smooth'
+import { useReveal } from '../lib/useReveal'
 import { ArrowRight, Play, Plus } from './Icons'
 
 const totalLessons = modules.reduce((sum, module) => sum + module.lessons.length, 0)
 
 export default function Curriculum() {
   const [openModule, setOpenModule] = useState<string | null>(null)
+  const headRef = useReveal<HTMLDivElement>(0.1)
+  const metaRef = useReveal<HTMLDivElement>(0.1)
+  const modulesRef = useReveal<HTMLDivElement>(0.05)
 
   useEffect(() => {
     const onOpen = (event: Event) => {
@@ -21,7 +25,7 @@ export default function Curriculum() {
   return (
     <section className="section curriculum" id="icerik" aria-labelledby="curriculum-title">
       <div className="container">
-        <div className="section-head">
+        <div className="section-head reveal" ref={headRef}>
           <h2 className="section-title" id="curriculum-title">
             8 modül, 48 ders.
           </h2>
@@ -31,27 +35,27 @@ export default function Curriculum() {
           </p>
         </div>
 
-        <div className="curriculum-meta">
-          <span>
+        <div className="curriculum-meta reveal stagger" ref={metaRef}>
+          <span className="reveal">
             <strong>{modules.length}</strong> modül
           </span>
-          <span>
+          <span className="reveal">
             <strong>{totalLessons}</strong> ders
           </span>
-          <span>
+          <span className="reveal">
             <strong>9</strong> sponsorluk dersi
           </span>
-          <span>
+          <span className="reveal">
             <strong>{price.amount} {price.currency}</strong> tek ödeme
           </span>
         </div>
 
-        <div className="modules">
+        <div className="modules stagger" ref={modulesRef}>
           {modules.map((module) => {
             const isOpen = openModule === module.no
             return (
               <div
-                className="module"
+                className="module reveal"
                 key={module.no}
                 id={`modul-${module.no}`}
                 data-open={isOpen}
@@ -96,7 +100,7 @@ export default function Curriculum() {
           })}
         </div>
 
-        <div className="curriculum-foot">
+        <div className="curriculum-foot reveal">
           <a className="btn btn-ghost" href={links.freeLesson}>
             <Play size={12} />
             İlk dersi ücretsiz izle

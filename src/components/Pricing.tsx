@@ -1,18 +1,22 @@
 import { links, price, pricing } from '../content'
 import { ArrowRight, Check } from './Icons'
+import { useReveal } from '../lib/useReveal'
 
 export default function Pricing() {
+  const headRef = useReveal<HTMLDivElement>(0.1)
+  const cardRef = useReveal<HTMLDivElement>(0.1)
+
   return (
     <section className="section pricing" id="kurs" aria-labelledby="pricing-title">
       <div className="container">
-        <div className="section-head">
+        <div className="section-head reveal" ref={headRef}>
           <h2 className="section-title" id="pricing-title">
             {pricing.title}
           </h2>
           <p className="lead">{pricing.intro}</p>
         </div>
 
-        <div className="pricing-card">
+        <div className="pricing-card reveal-scale" ref={cardRef}>
           <div className="pricing-top">
             <p className="pricing-kicker">Kursun tamamı</p>
             <p className="pricing-price">
@@ -26,9 +30,9 @@ export default function Pricing() {
             </p>
           </div>
 
-          <ul className="pricing-features">
+          <ul className="pricing-features stagger">
             {pricing.features.map((feature) => (
-              <li key={feature}>
+              <li className="reveal" key={feature}>
                 <Check size={13} />
                 <span>{feature}</span>
               </li>
