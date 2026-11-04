@@ -1,52 +1,18 @@
 import { useEffect, useRef, useState } from 'react'
 import { snap } from '../content'
-import { prefersReducedMotion, getLenis } from '../lib/smooth'
+import { prefersReducedMotion } from '../lib/smooth'
 
 const pad = (value: number) => String(value).padStart(2, '0')
 
 export default function Snap() {
   const section = useRef<HTMLElement>(null)
   const sticky = useRef<HTMLDivElement>(null)
-  const canvas = useRef<HTMLCanvasElement>(null)
   const ticks = useRef<HTMLSpanElement>(null)
-  const frames = useRef<HTMLImageElement[]>([])
-  const ready = useRef(false)
   const reduced = useRef(prefersReducedMotion()).current
   const [active, setActive] = useState(reduced ? snap.phases.length - 1 : 0)
-  const total = snap.frames
 
   useEffect(() => {
-    const draw = (image: HTMLImageElement) => {
-      const node = canvas.current
-      const context = node?.getContext('2d')
-      if (!node || !context) return
-      context.clearRect(0, 0, node.width, node.height)
-      context.drawImage(image, 0, 0, node.width, node.height)
-    }
-
-    const poster = new Image()
-    poster.src = `${import.meta.env.BASE_URL}assets/snap/poster.webp`
-    poster.onload = () => {
-      if (!ready.current) draw(poster)
-    }
-
     if (reduced) return
-
-    let cancelled = false
-    const images = Array.from({ length: total }, (_, index) => {
-      const image = new Image()
-      image.src = `${import.meta.env.BASE_URL}assets/snap/frames/f${pad(index)}.webp`
-      return image
-    })
-    frames.current = images
-
-    Promise.all(
-      images.map((image) => (image.decode ? image.decode().catch(() => undefined) : undefined)),
-    ).then(() => {
-      if (cancelled) return
-      ready.current = true
-      draw(images[0])
-    })
 
     let frame = 0
     const update = () => {
@@ -56,10 +22,6 @@ export default function Snap() {
       const rect = root.getBoundingClientRect()
       const distance = Math.max(1, rect.height - window.innerHeight)
       const progress = Math.min(1, Math.max(0, -rect.top / distance))
-      const index = Math.round(progress * (total - 1))
-      const image = images[index]
-
-      if (ready.current && image?.complete) draw(image)
 
       if (ticks.current) {
         ticks.current.style.transform = `scaleX(${progress})`
@@ -78,26 +40,14 @@ export default function Snap() {
     }
 
     update()
-
-    // Lenis smooth scroll kullanıldığında Lenis'ten de dinle
-    const lenis = getLenis()
-    if (lenis) {
-      lenis.on('scroll', onScroll)
-    } else {
-      window.addEventListener('scroll', onScroll, { passive: true })
-    }
+    window.addEventListener('scroll', onScroll, { passive: true })
     window.addEventListener('resize', onScroll)
     return () => {
-      cancelled = true
-      if (lenis) {
-        lenis.off('scroll', onScroll)
-      } else {
-        window.removeEventListener('scroll', onScroll)
-      }
+      window.removeEventListener('scroll', onScroll)
       window.removeEventListener('resize', onScroll)
       if (frame) window.cancelAnimationFrame(frame)
     }
-  }, [reduced, total])
+  }, [reduced])
 
   return (
     <section
@@ -126,12 +76,12 @@ export default function Snap() {
 
           <div className="snap-stage">
             <div className="snap-media">
-              <canvas
-                ref={canvas}
+              <img
+                src={`${import.meta.env.BASE_URL}assets/snap/snap.gif`}
+                alt="Dönüşüm animasyonu"
                 width={720}
                 height={405}
-                role="img"
-                aria-label="Dönüşüm animasyonu görseli"
+                className="snap-gif"
               />
               <span className="snap-flash" aria-hidden="true" />
               <span className="snap-vignette" aria-hidden="true" />

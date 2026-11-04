@@ -1,4 +1,4 @@
-﻿/**
+/**
  * All copy, links and course data for the page.
  * Checkout, login and legal routes point at the live store so the redesign can
  * be dropped onto kurs.yusufipek.me without rewiring the purchase flow.
